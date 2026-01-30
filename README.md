@@ -15,14 +15,13 @@ which I have been getting use to for the past few days.
 
 
 ISSUE: 
-- somehow forgot how to add a text inside a section
-
+- I forgot to use input as an element and instead used div
 
 
 
 
 TODO: 
-- [] Focus on creating the html and css structure
+- [x] Focus on creating the html and css structure
 - [] JavaScript implementation
 - [] UI active state
-- [] Mobile version 
+- [x] Mobile version 
