@@ -36,14 +36,15 @@ body {
     .left-content {
       display: grid;
       color: #4b7172;
-      grid-template-rows: 1fr 1fr 1fr;
+      font-size: 15px;
+      font-weight: 700;
+      grid-template-rows: 80px 160px 80px;
     }
 
       .dollar-sign {
         display: grid;
         margin-left: 10px;
         align-items: center;
-        color: #b5c8c7;
       }
 
       .bill-total {
@@ -57,21 +58,24 @@ body {
       }
 
       .bill-placeholder {
+        margin-top: 5px;
         border-radius: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: #f3f8fb;
         min-height: 5vh;
         margin-right: 10px;
+        align-items: center;
       }
 
       .bill-content {
       }
       
       .select-tip {
-
+        display: grid;
+        align-items: center;
       }
-
+        
         .tip-percentage {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
@@ -79,8 +83,29 @@ body {
           gap: 10px;
         }
 
-      .people-num {
+          .tip-button {
+            border: transparent;
+            background-color: #00474b;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 500;
+          }
 
+          .tip-custom {
+            background-color: #f3f8fb;
+            border: transparent;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #b5c8c7;
+          }
+
+      .people-num {
+        display:grid;
+        align-items: center;
       }
 
     

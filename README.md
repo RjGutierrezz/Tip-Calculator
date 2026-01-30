@@ -23,6 +23,6 @@ ISSUE:
 
 TODO: 
 - [] Focus on creating the html and css structure
-- [] Learn how to add JavaScript implementation
+- [] JavaScript implementation
 - [] UI active state
-- []
+- [] Mobile version 
