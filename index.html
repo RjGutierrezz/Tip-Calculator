@@ -17,15 +17,15 @@
     <title>Tip Calculator App</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount / -->
+    <!-- person Total / person Reset -->
 
     <div class="container">
       <div class="container-holder">
 
         <!-- Logo container -->
         <div class="logo">
-          
+          <img src="./images/logo.svg" alt="MY LOGO">
         </div>
 
         <!-- Main content -->
@@ -34,12 +34,55 @@
 
             <!-- Interactable UI -->
             <div class="left-content">
-              
+              <div class="bill-content">
+                <p>Bill</p> 
+                <div class="bill-placeholder">
+                  <div class="dollar-sign">
+                    $
+                  </div>
+                  <div class="bill-total">
+                    150.28
+                  </div>
+                </div>
+              </div>
+              <div class="select-tip">
+                <p>Select Tip %</p>
+                <div class="tip-percentage">
+                  <button class="tip-button" type="">5%</button>
+                  <button class="tip-button" type="">10%</button>
+                  <button class="tip-button" type="">15%</button>
+                  <button class="tip-button" type="">25%</button>
+                  <button class="tip-button" type="">50%</button>
+                  <button class="tip-custom" type="">Custom</button>
+                </div>
+              </div>
+              <div class="people-num">
+                <p>Number of People</p>
+              </div>
+
             </div>
 
             <!-- Tip total -->
             <div class="right-content">
-              
+              <div class="tip-amount-holder">
+                <div class="tip-amount">
+                  <p class="guide-header">Tip Amount</p>
+                  <p class="guide-subheader">/ person</p>
+                </div>
+                <div class="tip-total">
+                  $5.99
+                </div>
+              </div>
+              <div class="tip-amount-holder">
+                <div class="tip-amount">
+                  <p class="guide-header">Total</p>
+                  <p class="guide-subheader">/ person</p>
+                </div>
+                <div class="tip-total">
+                  $34.55
+                </div>
+              </div>
+              <button class="button-reset" type="">RESET</button>
             </div>
           </div>
         </div>

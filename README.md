@@ -8,12 +8,14 @@ which I have been getting use to for the past few days.
 
 
 ### What I learned
-
+- Do not add the background color to *{}, add it to body{} instead
+- When you want to center a div, you want to change the property of its parent
 
 
 
 
 ISSUE: 
+- somehow forgot how to add a text inside a section
 
 
 

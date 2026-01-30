@@ -1,6 +1,134 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #c5e4e7;
   font-family: "JetBrains Mono", sans-serif;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #c5e4e7;
+}
+
+.logo {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.main-content {
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
+}
+
+  .main-content-holder {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    border-radius: 15px;
+    width: 70%;
+    gap: 20px;
+    height: 60%;
+  }
+
+    .left-content {
+      display: grid;
+      color: #4b7172;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+
+      .dollar-sign {
+        display: grid;
+        margin-left: 10px;
+        align-items: center;
+        color: #b5c8c7;
+      }
+
+      .bill-total {
+        display: grid;
+        justify-content: end;
+        margin-right: 20px;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 800;
+        color: #00474b;
+      }
+
+      .bill-placeholder {
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #f3f8fb;
+        min-height: 5vh;
+        margin-right: 10px;
+      }
+
+      .bill-content {
+      }
+      
+      .select-tip {
+
+      }
+
+        .tip-percentage {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 10px;
+        }
+
+      .people-num {
+
+      }
+
+    
+
+    .right-content {
+      background-color: #00474b;
+      border-radius: 10px;
+      padding: 30px;
+      display : grid;
+      grid-template-rows: 1fr 1fr 1fr
+    }
+
+    .tip-amount-holder{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+      .tip-amount {
+        
+      }
+
+        .guide-header {
+          font-size: 15px;
+          font-style: bold;
+          color: white;
+        }
+
+        .guide-subheader {
+          font-size: 13px;
+          color: #8fa2a2;
+        }
+
+      .tip-total {
+        display: grid;
+        color: #26c1ac;
+        font-weight: 900;
+        font-size: 35px;
+        justify-content: end;
+      }
+    
+    .button-reset {
+      margin: 20px;
+      border-radius: 5px;
+      border: transparent;
+      color: #00474b;
+      font-size: 15px;
+      font-weight: 900;
+      background-color: #26c2ad;
+    }
+
