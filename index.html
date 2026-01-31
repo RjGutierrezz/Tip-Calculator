@@ -37,7 +37,7 @@
               <div class="bill-content">
                 <p>Bill</p> 
                 <!-- This needs to be an input -->
-                <input type="number" min="0" step="1" class="bill-placeholder"/>
+                <input id="bill" type="number" min="0" step="1" class="bill-placeholder"/>
                   <!-- <img class="dollar-sign" src="./images/icon-dollar.svg" alt="dollar-sign"> -->
                   <!-- <div class="bill-total"> -->
                   <!--   150.28 -->
@@ -46,12 +46,13 @@
               <div class="select-tip">
                 <p>Select Tip %</p>
                 <div class="tip-percentage">
-                  <button class="tip-button" type="">5%</button>
-                  <button class="tip-button" type="">10%</button>
-                  <button class="tip-button" type="">15%</button>
-                  <button class="tip-button" type="">25%</button>
-                  <button class="tip-button" type="">50%</button>
-                  <button class="tip-custom" type="">Custom</button>
+                  <button data-tip="0.05" class="tip-button" type="">5%</button>
+                  <button data-tip="0.10" class="tip-button" type="">10%</button>
+                  <button data-tip="0.15" class="tip-button" type="">15%</button>
+                  <button data-tip="0.25" class="tip-button" type="">25%</button>
+                  <button data-tip="0.50" class="tip-button" type="">50%</button>
+                  <input id="custom-btn" type="number" min="0" class="tip-custom"
+                  placeholder="Custom %">
                 </div>
               </div>
               <div class="people-num">
@@ -69,7 +70,6 @@
                   <p class="guide-subheader">/ person</p>
                 </div>
                 <div class="tip-total">
-                  $5.99
                 </div>
               </div>
               <div class="tip-amount-holder">

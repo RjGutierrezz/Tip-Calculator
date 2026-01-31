@@ -10,7 +10,11 @@ which I have been getting use to for the past few days.
 ### What I learned
 - Do not add the background color to *{}, add it to body{} instead
 - When you want to center a div, you want to change the property of its parent
-
+- Input element properties and how to manipulate the content inside it
+- Browsers stores your color and converts it to RGB
+- You can use the class names from your css to manipulate them using classList
+- When using querySelectorAll you are expecting a NodeList so you need a
+  iteration that would go through them, for example forEach()
 
 
 
@@ -23,6 +27,6 @@ ISSUE:
 TODO: 
 - [x] Focus on creating the html and css structure
 - [ ] JavaScript implementation
-- [ ] UI active state
-- [ ] Add the border color change in JS
+- [x] UI active state
+- [x] Add the border color change in JS
 - [x] Mobile version 

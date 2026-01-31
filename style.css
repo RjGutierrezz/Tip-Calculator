@@ -70,7 +70,24 @@ body {
         background-image: url('./images/icon-person.svg');
         background-repeat: no-repeat;
         background-position: 12px center;
-        border: transparent;
+        border:2px solid transparent;
+        margin-top: 5px;
+        border-radius: 5px;
+        background-color: #f3f8fb;
+        min-height: 5vh;
+        text-align: end;
+        padding-right: 10px;
+        font-size: 20px;
+        font-weight: 800;
+        color: #274c77;
+
+      }
+
+      .bill-placeholder {
+        background-image: url('./images/icon-dollar.svg');
+        background-repeat: no-repeat;
+        background-position: 12px center;
+        border: 2px solid transparent;
         margin-top: 5px;
         border-radius: 5px;
         background-color: #f3f8fb;
@@ -82,20 +99,9 @@ body {
         color: #274c77;
       }
 
-      .bill-placeholder {
-        background-image: url('./images/icon-dollar.svg');
-        background-repeat: no-repeat;
-        background-position: 12px center;
-        border: transparent;
-        margin-top: 5px;
-        border-radius: 5px;
-        background-color: #f3f8fb;
-        min-height: 5vh;
-        text-align: end;
-        padding-right: 10px;
-        font-size: 20px;
-        font-weight: 800;
-        color: #274c77;
+      .bill-placeholder:focus, .people-placeholder:focus {
+        outline: none;
+        border-color: #26c2ad;
       }
 
       .bill-content {
@@ -125,6 +131,11 @@ body {
             font-weight: 500;
           }
 
+          .tip-button.active {
+            background-color: #80ced7;
+            color: #274c77;
+          }
+
           .tip-custom {
             background-color: #f3f8fb;
             border: transparent;
@@ -132,7 +143,9 @@ body {
             border-radius: 5px;
             font-size: 20px;
             font-weight: 500;
-            color: #b5c8c7;
+            color: #8fa2a2;
+            min-width: 0;
+            text-align: center;
           }
 
       .people-num {
