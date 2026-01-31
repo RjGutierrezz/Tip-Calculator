@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 body {
   background-color: #a3cef1;
 }
@@ -59,18 +66,36 @@ body {
         color: #00474b;
       }
 
-      .bill-placeholder {
-        background-image: url('./images/icon-dollar.svg');
+      .people-placeholder {
+        background-image: url('./images/icon-person.svg');
         background-repeat: no-repeat;
+        background-position: 12px center;
+        border: transparent;
         margin-top: 5px;
         border-radius: 5px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         background-color: #f3f8fb;
         min-height: 5vh;
         text-align: end;
         padding-right: 10px;
-        align-items: center;
+        font-size: 20px;
+        font-weight: 800;
+        color: #274c77;
+      }
+
+      .bill-placeholder {
+        background-image: url('./images/icon-dollar.svg');
+        background-repeat: no-repeat;
+        background-position: 12px center;
+        border: transparent;
+        margin-top: 5px;
+        border-radius: 5px;
+        background-color: #f3f8fb;
+        min-height: 5vh;
+        text-align: end;
+        padding-right: 10px;
+        font-size: 20px;
+        font-weight: 800;
+        color: #274c77;
       }
 
       .bill-content {

@@ -22,6 +22,7 @@ ISSUE:
 
 TODO: 
 - [x] Focus on creating the html and css structure
-- [] JavaScript implementation
-- [] UI active state
+- [ ] JavaScript implementation
+- [ ] UI active state
+- [ ] Add the border color change in JS
 - [x] Mobile version 
