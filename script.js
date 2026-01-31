@@ -4,6 +4,8 @@ let selectedTip = null;
 
 function tipButtons() {
 	const buttons = document.querySelectorAll(".tip-button");
+  const customTip = document.querySelector(".tip-custom");
+
 
 	buttons.forEach((button) => {
 		button.addEventListener("click", () => {
@@ -11,18 +13,36 @@ function tipButtons() {
 
 			// Remove active from all buttons to avoid multiple pick
 			buttons.forEach((btn) => btn.classList.remove("active"));
+      customTip.value = '';
 
 			// If the button is NOT using the class active then activate it
 			if (!isActive) {
 				button.classList.add("active");
         selectedTip = button.dataset.tip;
-			}
+			} else {
+        selectedTip = null
+      }
 
       totalInformation();
 		});
 	});
 }
-tipButtons();
+
+
+function customTip() {
+  const customTip = document.querySelector(".tip-custom");
+  const custom = Number(customTip.value);
+
+  customTip.addEventListener("input", () => {
+    if (custom <= 0) {
+      return;
+    } else {
+      selectedTip = custom / 100;
+    }
+
+
+  })
+}
 
 
 // Input field needs to return red border when an invalid inputis entered
@@ -40,21 +60,37 @@ function inputVerifier() {
   })
 
 }
-inputVerifier();
+
 
 
 // Calculate the received bill and tip %
 // get tip then multiply the answer to the bill
 function totalInformation() {
+  const peopleInput = document.querySelector('.people-placeholder');
+  const people = Number(peopleInput.value);
+
   const billInput = document.getElementById('bill');
   const bill = Number(billInput.value)
 
-  if (!bill || !selectedTip) {
+  if (!bill || !selectedTip || !people) {
     return
   }
 
-  const total = bill * selectedTip;
+  const billPerPerson = bill / people;
+  const tip = billPerPerson * selectedTip;
 
-  const totalDisplay = document.querySelector(".tip-total")
-  totalDisplay.textContent = `${total.toFixed(2)}`;
+  const total = tip + billPerPerson;
+
+  const tipDisplay = document.querySelector(".tip-total")
+  tipDisplay.textContent = `${tip.toFixed(2)}`;
+
+  const totalDisplay = document.getElementById("person-total")
+  totalDisplay.textContent = `${total.toFixed(2)}`
 }
+
+function init() {
+  tipButtons();
+  inputVerifier(); 
+  customTip();
+}
+init();

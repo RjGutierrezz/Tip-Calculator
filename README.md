@@ -20,7 +20,7 @@ which I have been getting use to for the past few days.
 
 ISSUE: 
 - I forgot to use input as an element and instead used div
-
+- Custom input is not working
 
 
 
@@ -30,3 +30,5 @@ TODO:
 - [x] UI active state
 - [x] Add the border color change in JS
 - [x] Mobile version 
+- [ ] Add custom tip to your total functionality
+- [ ] Number of people needs to be added to total functionality as well
