@@ -200,6 +200,13 @@ body {
       font-size: 15px;
       font-weight: 900;
       background-color: #80ced7;
+      cursor: pointer;
+    }
+
+    .button-reset:hover {
+      background-color: #274c77;
+      color: #80ced7;
+      transition: background-color 0.3s ease;
     }
 
 

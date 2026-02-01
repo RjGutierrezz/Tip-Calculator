@@ -92,6 +92,7 @@ function totalInformation() {
 	totalDisplay.textContent = `${total.toFixed(2)}`;
 }
 
+// Reset button
 function reset() {
 	const resetButton = document.querySelector(".button-reset");
 
