@@ -26,9 +26,9 @@ ISSUE:
 
 TODO: 
 - [x] Focus on creating the html and css structure
-- [ ] JavaScript implementation
+- [x] JavaScript implementation
 - [x] UI active state
 - [x] Add the border color change in JS
 - [x] Mobile version 
-- [ ] Add custom tip to your total functionality
-- [ ] Number of people needs to be added to total functionality as well
+- [x] Add custom tip to your total functionality
+- [x] Number of people needs to be added for total functionality as well
