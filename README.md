@@ -1,4 +1,12 @@
-# TIP-Calculator
+<div align="center">
+  <br />
+      <img src="./images/projectbanner.png" alt="Project Banner">
+  <br />
+</div>
+
+<h3 align="center">Bill Splitter</h3>
+
+# Welcome to my app
 
 This is a small webApp I created to practice my JavaScript skills and also avoid
 those awkward moment of not knowing how much to tip when going out with friends. 
